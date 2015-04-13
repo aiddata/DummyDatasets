@@ -73,8 +73,7 @@ beta_df["End_Year_Score"] <- 5.0 +
                               (2.5 * beta_df["Guardians"]) +
                               (2.0 * beta_df["Last_Year_School_Attendance"]) +
                               (.001 * beta_df["HH_Income"]) +
-                              (20.0 * beta_df["FreeSchoolLunch"]) +
-                              runif(1,0,20)
+                              (20.0 * beta_df["FreeSchoolLunch"])
 
 noise <- runif(4000,5,50)
 
