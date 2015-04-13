@@ -116,7 +116,7 @@ noise <- runif(40,0,0.5)
 
 beta_df["Tech_Level"] <- beta_df["Tech_Level"] + noise
 
-write.csv(beta_df,"RyanB_AdamP")
+write.csv(beta_df,"RyanB_AdamP.csv")
 
 summary(lm(Tech_Level ~ Unionized + Years_Post_Union + (Years_Post_Union * Unionized) + State_Pop + 
                 Major_Cities + Total_Size + Income_PerCap + Gas_Prices, data=beta_df))
